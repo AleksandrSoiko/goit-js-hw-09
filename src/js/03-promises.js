@@ -30,13 +30,11 @@ function createPromise(position, delay) {
   });
   promise
     .then(({ position, delay }) => {
-      console.log(1);
       Notiflix.Notify.success(
         `✅ Fulfilled promise ${position + 1} in ${delay}ms`
       );
     })
     .catch(({ position, delay }) => {
-      console.log(2);
       Notiflix.Notify.warning(
         `❌ Rejected promise ${position + 1} in ${delay}ms`
       );
