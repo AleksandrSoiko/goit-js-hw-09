@@ -16,7 +16,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    if (fp.selectedDates[0].getTime() > fp.now.getTime()) {
+    if (fp.selectedDates[0].getTime() - fp.now.getTime() > 5000) {
       buttonStartRef.disabled = false;
     } else {
       buttonStartRef.disabled = true;
