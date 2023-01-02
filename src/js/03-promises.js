@@ -65,6 +65,10 @@ function toActiveInputElement() {
   delayValueRef.disabled = false;
   stepValueRef.disabled = false;
   amountValueRef.disabled = false;
+  createPromiseButton.value = '';
+  delayValueRef.value = '';
+  stepValueRef.value = '';
+  amountValueRef.value = '';
 }
 
 function toNotActiveInputElement() {
